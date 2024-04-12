@@ -55,8 +55,8 @@ $insert = "INSERT INTO users VALUES
 	('1','admin','admin','admin',MD5('1q2w3e$R%T'),'{$avatarUrl}admin.jpg', NOW(), '0'),
 	('2','Gordon','Brown','gordonb',MD5('17592'),'{$avatarUrl}gordonb.jpg', NOW(), '0'),
 	('3','Hack','Me','1337',MD5('1a2b3c'),'{$avatarUrl}1337.jpg', NOW(), '0'),
-	('4','LDTS','Academy','ldts',MD5('ldts123$%'),'{$avatarUrl}pablo.jpg', NOW(), '0'),
-	('5','Bob','Smith','smithy',MD5('Arkansas4Ever'),'{$avatarUrl}smithy.jpg', NOW(), '0');";
+	('4','LDTS','Academy','ldts',MD5('1q2w3e$R%T&Y%'),'{$avatarUrl}pablo.jpg', NOW(), '0'),
+	('5','Bob','Smith','smithy',MD5('arkansas4ever'),'{$avatarUrl}smithy.jpg', NOW(), '0');";
 if( !mysqli_query($GLOBALS["___mysqli_ston"],  $insert ) ) {
 	dvwaMessagePush( "Data could not be inserted into 'users' table<br />SQL: " . ((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) );
 	dvwaPageReload();
